@@ -1,29 +1,44 @@
 <!doctype html>
 <html>
+
 <head>
-<title> <%=shopName%> </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>
+        <%=shopName%>
+    </title>
 </head>
+
 <body>
-<h1>Welcome to <%=shopName%> Shop</</h1>
-<h2>Here are some things that we sell:</h2>
-<ul>
-<% for(let i = 0; i < productCategories.length; i++) { %>
-<li><%= productCategories[i] %></li>
-<% } %>
-</ul>
-<h2> Visit us at: </h2>
-<ul>
-<% for(let i = 0; i < shopLocations.length; i++) { %>
-<li><%= shopLocations[i] %></li>
-<% } %>
-</ul>
-<h2> Our manager is... </h2>
-<ul>
-<% for(let i = 0; i < managerDetails.length; i++) { %>
-<p><%= managerDetails[i] %><p>
-<% } %>
-</ul>
+    <h1>Welcome to <%=shopName%> Shop</< /h1>
+            <h2>Here are some things that we sell:</h2>
+            <ul>
+                <% for(let i=0; i < productCategories.length; i++) { %>
+                    <li>
+                        <%= productCategories[i] %>
+                    </li>
+                    <% } %>
+            </ul>
+            <h2> Visit us at: </h2>
+            <ul>
+                <% for(let i=0; i < shopLocations.length; i++) { %>
+                    <li>
+                        <%= shopLocations[i] %>
+                    </li>
+                    <% } %>
+            </ul>
+            <h2> Our manager is... </h2>
+            <ul>
+                <% for(let i=0; i < managerDetails.length; i++) { %>
+                    <p>
+                        <%= managerDetails[i] %>
+                            <p>
+                                <% } %>
+            </ul>
 </body>
 </body>
 </body>
+
 </html>

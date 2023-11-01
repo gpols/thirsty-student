@@ -1,0 +1,18 @@
+body {
+    background-color: blanchedalmond;
+    padding: auto;
+}
+
+h1,
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Goldman', sans-serif;
+    color: darkslategray;
+    
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
