@@ -2,43 +2,59 @@
 <html>
 
 <head>
+    <!-- Preconnect to Google Fonts server - Montserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+    <!-- dynamically title using shopName variable -->
     <title>
         <%=shopName%>
     </title>
 </head>
 
 <body>
-    <h1>Welcome to <%=shopName%> Shop</< /h1>
-            <h2>Here are some things that we sell:</h2>
-            <ul>
-                <% for(let i=0; i < productCategories.length; i++) { %>
-                    <li>
-                        <%= productCategories[i] %>
-                    </li>
-                    <% } %>
-            </ul>
-            <h2> Visit us at: </h2>
-            <ul>
-                <% for(let i=0; i < shopLocations.length; i++) { %>
-                    <li>
-                        <%= shopLocations[i] %>
-                    </li>
-                    <% } %>
-            </ul>
-            <h2> Our manager is... </h2>
-            <ul>
-                <% for(let i=0; i < managerDetails.length; i++) { %>
-                    <p>
-                        <%= managerDetails[i] %>
-                            <p>
-                                <% } %>
-            </ul>
-</body>
-</body>
+    <!-- heading with a dynamic shopName variable -->
+    <h1>Welcome to <%=shopName%> Shop </h1>
+    <br>
+    <br>
+    <!-- Main content -->
+    <div class="home_page">
+        <!-- list of products sold -->
+        <h2>Here are some things that we sell:</h2>
+        <!-- list of product categories  -->
+        <ul>
+            <% for(let i=0; i < productCategories.length; i++) { %>
+                <li>
+                    <%= productCategories[i] %>
+                </li>
+                <% } %>
+        </ul>
+        <br>
+        <br>
+        <!-- shop locations -->
+        <h2> Visit us at: </h2>
+        <!-- list of shop locations -->
+        <ul>
+            <% for(let i=0; i < shopLocations.length; i++) { %>
+                <li>
+                    <%= shopLocations[i] %>
+                </li>
+                <% } %>
+        </ul>
+        <br>
+        <br>
+        <!-- manager details -->
+        <h2> Contact our manager! </h2>
+        <!-- list of manager details  -->
+        <ul>
+            <% for(let i=0; i < managerDetails.length; i++) { %>
+                <p>
+                    <%= managerDetails[i] %>
+                        <p>
+                            <% } %>
+        </ul>
+    </div>
 </body>
 
 </html>

@@ -2,20 +2,32 @@
 <html>
 
 <head>
+  <!-- Preconnect to Google Fonts server - Montserrat font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+
+  <!-- title of the webpage using shopName variable -->
   <title>
     <%=shopName%>
   </title>
 </head>
 
 <body>
-  <h1>Welcome to <%=shopName%> Shop</h1>
-
-  <form action="/search-result" method="GET">
-    <input id="search-box" type="text" name="keyword" value="Default">
-    <input type="submit" value="OK">
-  </form>
-
+  <!-- welcoming users to the shop -->
+  <h1>Welcome to <%=shopName%> Online Shop</h1>
+  <br>
+  <br>
+  <div class="search">
+    <!-- message for users to search for items -->
+    <p> Search for items</p>
+    <!-- Form for user input, submitting search keyword to "/search-result" endpoint using GET method -->
+    <form action="/search-result" method="GET">
+      <input id="search-box" type="text" name="keyword" placeholder="Ex: Beer">
+      <input type="submit" value="Search">
+    </form>
+  </div>
 </body>
 
 </html>
